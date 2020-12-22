@@ -1,85 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <title>insure-landing-page</title>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Insure landing page</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- styles -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <!-- nav -->
+      <nav class="nav">
+        <div class="nav-center">
+          <!-- nav header -->
+          <div class="nav-header">
+            <img src="./images/logo.svg" class="logo" alt="logo" />
+            <button class="nav-toggle">
+              <img
+                id="toggle-img"
+                src="./images/icon-hamburger.svg"
+                alt="toggle button"
+              />
+            </button>
+          </div>
+          <!-- links -->
+          <div class="links-container">
+            <ul class="links">
+              <li>
+                <a href="work" class="scroll-link">how we work</a>
+              </li>
+              <li>
+                <a href="blog" class="scroll-link">blog</a>
+              </li>
+              <li>
+                <a href="account" class="scroll-link">account</a>
+              </li>
+              <li>
+                <a href="plans" class="scroll-link">view plans</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- intro -->
+    <section id="intro" class="section">
+      <img
+        class="intro-pic"
+        src="./images/image-intro-mobile.jpg"
+        alt="intro"
+      />
+      <div class="intro-main">
+        <div class="details">
+          <h1>Humanizing your insurance.</h1>
+          <p>
+            Get your life insurance coverage easier and faster. We blend our
+            expertise and technology to help you find the plan that's right for
+            you. Ensure you and your loved ones are protected.
+          </p>
+          <button class="btn">view plans</button>
+        </div>
+        <div class="differences">
+          <hr class="split-line" />
+          <h2>We're different</h2>
+          <dl class="differences-items">
+            <dt>
+              <span class="item-img">
+                <img
+                  src="./images/icon-snappy-process.svg"
+                  alt="snappy process"
+                />
+              </span>
+              snappy process
+            </dt>
+            <dd>
+              Our application process can be completed in minutes, not hours.
+              Don't get stuck filling in tedious forms.
+            </dd>
+            <dt>
+              <span class="item-img">
+                <img
+                  src="./images/icon-affordable-prices.svg"
+                  alt="affordable prices"
+                />
+              </span>
+              affordable prices
+            </dt>
+            <dd>
+              We don't want you worrying about high monthly costs. Our prices
+              may be low, but we still offer the best coverage possible.
+            </dd>
+            <dt>
+              <span class="item-img">
+                <img src="./images/icon-people-first.svg" alt="people first" />
+              </span>
+              people first
+            </dt>
+            <dd>
+              Our plans aren't full of conditions and clauses to prevent
+              payouts. We make sure you're covered when you need it.
+            </dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+    <!-- how we work -->
+    <section id="work" class="section">
+      <div class="work-container">
+        <h2>Find out more about how we work</h2>
+        <button class="btn">how we work</button>
+      </div>
+    </section>
+    <footer class="section">
+      <div class="social-media">
+        <img src="./images/logo.svg" alt="logo" class="logo" />
+        <ul class="accounts-container">
+          <li>
+            <a href="#" class="account">
+              <img src="./images/icon-facebook.svg" alt="facebook" />
+            </a>
+          </li>
+          <li>
+            <a href="#" class="account">
+              <img src="./images/icon-twitter.svg" alt="twitter" />
+            </a>
+          </li>
+          <li>
+            <a href="#" class="account">
+              <img src="./images/icon-pinterest.svg" alt="pinterest" />
+            </a>
+          </li>
+          <li>
+            <a href="#" class="account">
+              <img src="./images/icon-instagram.svg" alt="instagram" />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="contacts">
+        <hr class="contacts-split-line" />
+        <div>
+          <section class="contact-section">
+            <h3>our company</h3>
+            <ul>
+              <li><a href="#">how we work</a></li>
+              <li><a href="#">why insure?</a></li>
+              <li><a href="#">check price</a></li>
+              <li><a href="#">reviews</a></li>
+            </ul>
+          </section>
+          <section class="contact-section">
+            <h3>help me</h3>
+            <ul>
+              <li><a href="#">faq</a></li>
+              <li><a href="#">terms of use</a></li>
+              <li><a href="#">privacy policy</a></li>
+              <li><a href="#">cookies</a></li>
+            </ul>
+          </section>
+          <section class="contact-section">
+            <h3>contact</h3>
+            <ul>
+              <li><a href="#">sales</a></li>
+              <li><a href="#">support</a></li>
+              <li><a href="#">live chat</a></li>
+            </ul>
+          </section>
+          <section class="contact-section">
+            <h3>others</h3>
+            <ul>
+              <li><a href="#">careers</a></li>
+              <li><a href="#">press</a></li>
+              <li><a href="#">licenses</a></li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </footer>
 
-  How we work
-  Blog
-  Account
-  View plans
-
-  Humanizing your insurance.
-
-  Get your life insurance coverage easier and faster. We blend our expertise 
-  and technology to help you find the plan that’s right for you. Ensure you 
-  and your loved ones are protected.
-
-  View plans
-
-  We’re different
-
-  Snappy Process
-
-  Our application process can be completed in minutes, not hours. Don’t get 
-  stuck filling in tedious forms.
-
-  Affordable Prices
-
-  We don’t want you worrying about high monthly costs. Our prices may be low, 
-  but we still offer the best coverage possible.
-
-  People First
-
-  Our plans aren’t full of conditions and clauses to prevent payouts. We make 
-  sure you’re covered when you need it.
-
-  Find out more about how we work
-
-  How we work
-
-  Our company
-
-  How we work
-  Why Insure?
-  View plans
-  Reviews
-
-  Help me
-
-  FAQ
-  Terms of use
-  Privacy policy
-  Cookies
-
-  Contact
-
-  Sales
-  Support
-  Live chat
-
-  Others
-
-  Careers
-  Press
-  Licenses
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <script type="text/javascript" src="./index.js" />
+  </body>
 </html>
